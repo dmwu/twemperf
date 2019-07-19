@@ -159,7 +159,7 @@ struct context {
 
     struct stats       stats;                   /* statistics */
 
-    char               buf1m[MB];               /* 1M buffer */
+    char               buf1m[100*MB];               /* 1M buffer */
 };
 
 typedef void (*init_t)(struct context *, void *);
